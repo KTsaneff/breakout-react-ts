@@ -1,0 +1,14 @@
+:root { --bg: #0f1220; --fg: #e6e6f0; --accent: #7cc4ff; }
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body { margin: 0; font-family: system-ui, sans-serif; background: var(--bg); color: var(--fg); }
+.wrapper { min-height: 100%; display: grid; place-items: center; padding: 24px; }
+.card { width: 960px; max-width: 100%; background: #151933; border: 1px solid #242b57; border-radius: 16px; padding: 20px; box-shadow: 0 10px 30px rgba(0,0,0,.25); }
+.header { display:flex; align-items:center; justify-content:space-between; gap: 12px; margin-bottom: 12px; }
+.header h1 { font-size: 18px; margin: 0; letter-spacing: .3px; }
+.controls { display:flex; gap: 8px; flex-wrap: wrap; }
+button { background: #22284f; border: 1px solid #2a3270; color: var(--fg); padding: 8px 12px; border-radius: 10px; cursor: pointer; }
+button:hover { background: #2a3270; }
+.badge { padding: 6px 10px; background: #0f1433; border: 1px solid #2a3270; border-radius: 999px; font-size: 12px; }
+.canvas-wrap { display:flex; flex-direction: column; align-items:center; gap: 10px; }
+.help { opacity: .8; font-size: 13px; }
